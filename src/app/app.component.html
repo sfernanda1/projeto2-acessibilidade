@@ -19,6 +19,9 @@
     <input type="text" id="age">
   </div>
 
+  <label for="Info">Subscribe to news letter</label>
+  <input id="info" type="checkbox" (change)="info = !info">
+  <p [@fade] *ngIf="info">This is a placeholder for more information</p>
   <div class="button-group">
     <button class="button button-primary" type="button">Submit</button>
     <button (click)="modalRef.close()" class="button button-secundary" type="button">Cancel</button>
