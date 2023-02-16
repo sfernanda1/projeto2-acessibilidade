@@ -1,7 +1,7 @@
 import { TemplateRef, ViewChild } from '@angular/core';
-import { ModalService, ModalRef } from './shared/components/modal/services/modal.service';
+import { ModalService } from './shared/components/modal/services/modal.service';
 import { Component } from '@angular/core';
-
+import { ModalRef } from './shared/components/modal/models/modal-ref';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,7 +13,7 @@ export class AppComponent {
   //Injetando templateRef
   @ViewChild('modal') public modalTemplateRef: TemplateRef<any>;
   public modalRef: ModalRef;
-
+  public info = false
   constructor(private modalService: ModalService){}
 
   //chamada para exibir o modal
