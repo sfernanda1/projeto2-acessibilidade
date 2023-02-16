@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "a11y-p2"
+    }
+  },
+  "defaultProject": "a11y-p2",
+  "cli": {
+    "analytics": false
+  }
 }
